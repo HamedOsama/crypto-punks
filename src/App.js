@@ -8,6 +8,9 @@ function App() {
   return (
     <React.Fragment>
       <Header />
+      <div style={{ display: 'flex' }}>
+        <PunkCard />
+      </div>
     </React.Fragment>
   );
 }
