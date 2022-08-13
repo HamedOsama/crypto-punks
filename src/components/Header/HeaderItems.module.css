@@ -1,0 +1,10 @@
+.headerItems{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  list-style: none;
+  color: #a1a5b0;
+}
+.headerItems li{
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  background-color: #1c1c1e;
+  height : 500px;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 5rem 2rem;
+}
+.nftImgContainer{
+  width: 300px;
+}
+.nftImg{
+  width: 100%;
+}
+.nftData{
+  margin: 1.25rem;
+}
+.nftData .id{
+  color: #a1a5b0;
+}
+.currency{
+  height: 1.5rem;
+  width: 1rem;
+}
+.priceContainer{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.75rem 0 0 0;
+}
