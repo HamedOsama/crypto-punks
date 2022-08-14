@@ -6,11 +6,8 @@
   height : 500px;
   border-radius: 1rem;
   overflow: hidden;
-  margin: 0 1rem;
   cursor: pointer;
   min-width: 300px;
-}
-.nftImgContainer{
 }
 .nftImg{
   width: 100%;
