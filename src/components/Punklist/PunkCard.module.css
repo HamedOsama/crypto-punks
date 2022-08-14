@@ -19,6 +19,8 @@
 }
 .nftData .id{
   color: #a1a5b0;
+  font-size: 20px;
+  font-weight: 900;
 }
 .currency{
   height: 1.5rem;
