@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
-import PunkCard from './components/Punklist/PunkCard';
 import axios from 'axios'
 import Punklist from './components/Punklist/Punklist';
 function App() {
   const [punkListData, setPunkListData] = useState([])
-  console.log(punkListData[0].traits[0].value)
+  console.log(punkListData)
   useEffect(() => {
     console.log(1)
     const getMyNfts = async () => {
