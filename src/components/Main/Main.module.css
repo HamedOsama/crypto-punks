@@ -1,7 +1,9 @@
 .main {
   display: flex;
   gap: 2rem;
-  margin: 4rem 0;
+  margin: 3rem 0 2rem;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid white;
   /* align-items: center; */
 }
 

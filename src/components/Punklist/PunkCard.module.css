@@ -14,8 +14,18 @@
   margin: 0 3rem 0 0;
 }
 
+.nftImgContainer {
+  overflow: hidden;
+}
+
 .nftImg {
   width: 100%;
+  transition: 0.3s ease-in-out;
+
+}
+
+.nftImg:hover {
+  transform: scale(1.1);
 }
 
 .nftData {
@@ -24,8 +34,8 @@
 
 .nftData .id {
   color: #a1a5b0;
-  font-size: 20px;
-  font-weight: 900;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .currency {
