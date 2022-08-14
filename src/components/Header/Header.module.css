@@ -2,12 +2,13 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   align-items: center;
   color: #fff;
 }
-.header > *{
+/* .header > *{
   margin: 1rem 1rem 0;
-}
+} */
 .punkLogo{
   width: 200px;
   height: 70px;
