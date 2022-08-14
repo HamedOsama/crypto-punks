@@ -1,0 +1,16 @@
+.socialMediaContainer{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.socialMedia{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.socialMedia img{
+  width: 100%;
+}
