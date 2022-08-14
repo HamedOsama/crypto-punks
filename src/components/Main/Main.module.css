@@ -1,26 +1,40 @@
-.main{
+.main {
   display: flex;
   gap: 2rem;
   margin: 4rem 0;
   /* align-items: center; */
 }
-.nftContainer{
+
+.nftContainer {
   width: 300px;
   border-radius: 1rem;
   overflow: hidden;
 }
-.nftContainer .nft{
+
+.nftContainer .nft {
   width: 100%;
 }
-.currentData{
+
+
+.currentData {
   /* height: 300px; */
   flex: 1;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-.ownerData{
+
+.currentData .header h1 {
+  font-size: 5rem;
+}
+
+.ownerData {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.id {
+  color: #a1a5b0;
+  font-weight: normal;
 }

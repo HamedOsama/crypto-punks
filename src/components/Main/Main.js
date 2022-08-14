@@ -12,9 +12,9 @@ const Main = () => {
       </div>
       <div className={style.currentData}>
         <div className={style.header}>
-          <h2>
+          <h1>
             Laser Punk <span className={style.id}>.#0</span>
-          </h2>
+          </h1>
         </div>
         <div className={style.ownerData}>
           <Owner />
