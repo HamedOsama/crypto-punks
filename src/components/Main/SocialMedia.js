@@ -8,17 +8,17 @@ function SocialMedia() {
   return (
     <ul className={style.socialMediaContainer}>
       <li className={style.socialMedia}>
-        <a href="#1">
+        <a href="#1" className={style.link}>
           <img src={instagram} alt="instagram" />
         </a>
       </li>
       <li className={style.socialMedia}>
-        <a href="#1">
+        <a href="#1" className={style.link}>
           <img src={twitter} alt="instagram" />
         </a>
       </li>
       <li className={style.socialMedia}>
-        <a href="#1">
+        <a href="#1" className={style.link}>
           <img src={more} alt="instagram" />
         </a>
       </li>
