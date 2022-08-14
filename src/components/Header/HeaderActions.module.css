@@ -1,34 +1,39 @@
-.HeaderActions{
+.HeaderActions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
-.themeContainer{
+
+.themeContainer {
   display: flex;
   align-items: center;
   border-radius: 50%;
-  background-color: #1c1c1e;
+  background-color: var(--sec-background-color);
   padding: 0.75rem;
   cursor: pointer;
   transition: 0.3 ease-in-out;
 }
-.themeContainer:hover{
+
+.themeContainer:hover {
   opacity: 0.8;
 }
-.theme{
+
+.theme {
   height: 1.5rem;
 }
-.primaryBtn{
+
+.primaryBtn {
   border: none;
   outline: none;
-  padding: 1rem 2.5rem ;
+  padding: 1rem 2.5rem;
   border-radius: 3rem;
-  background: linear-gradient(90deg,#59f9b7,#66feea);
+  background: linear-gradient(90deg, #59f9b7, #66feea);
   cursor: pointer;
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
   color: black;
 }
-.primaryBtn:hover{
+
+.primaryBtn:hover {
   opacity: .8;
 }

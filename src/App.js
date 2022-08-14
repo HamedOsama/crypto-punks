@@ -6,6 +6,7 @@ import Main from './components/Main/Main';
 function App() {
   const [punkListData, setPunkListData] = useState([])
   const [selectedPunk, setSelectedPunk] = useState(0)
+  // const [currentTheme, setCurrentTheme] = useState('')
   console.log(punkListData)
   console.log(selectedPunk)
   useEffect(() => {
@@ -19,14 +20,14 @@ function App() {
   }, [])
 
   return (
-    <React.Fragment>
+    <div>
       <Header />
       {/* <div style={{ display: 'flex' }}> */}
       {/* {punkListData.length > 0 && <PunkCard id={punkListData[1].token_id} name={punkListData[1].name} />} */}
       {punkListData.length > 0 && <Main selectedPunk={selectedPunk} punkListData={punkListData} />}
       <Punklist punks={punkListData} setSelectedPunk={setSelectedPunk} />
       {/* </div> */}
-    </React.Fragment>
+    </div>
   );
 }
 

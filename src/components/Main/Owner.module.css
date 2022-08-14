@@ -17,7 +17,7 @@
 }
 
 .accountNumber {
-  color: #a1a5b0;
+  color: var(--sec-color);
 }
 
 .username {

@@ -1,32 +1,35 @@
-.header{
+.header {
   height: 80px;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
-  color: #fff;
+  color: var(--main-color);
 }
 
-.punkLogo{
+.punkLogo {
   width: 200px;
   height: 70px;
 }
-.searchBar{
-  background-color: #1c1c1e;
+
+.searchBar {
+  background-color: var(--sec-background-color);
   display: flex;
   align-items: center;
   flex: 1;
   border-radius: 2rem;
   height: 50px;
 }
-.searchIconContainer{
+
+.searchIconContainer {
   margin: 1rem;
 }
-.searchInput{
+
+.searchInput {
   background-color: transparent;
   border: none;
   outline: none;
   width: 100%;
-  color: #eee;
+  color: var(--input-color);
   font-size: 1rem;
 }
