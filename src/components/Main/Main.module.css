@@ -6,13 +6,17 @@
 }
 
 .nftContainer {
-  width: 300px;
+  min-width: 300px;
+  /* width: 100%; */
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 1rem;
   overflow: hidden;
 }
 
 .nftContainer .nft {
   width: 100%;
+  /* object-fit: contain; */
 }
 
 
@@ -26,6 +30,8 @@
 
 .currentData .header h1 {
   font-size: 5rem;
+  font-weight: 800;
+  transition: 1s;
 }
 
 .ownerData {
