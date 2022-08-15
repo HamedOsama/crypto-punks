@@ -1,7 +1,6 @@
 import React from 'react'
 
 import style from './PunkCard.module.css'
-import nftIMG from '../../assets/punk.jpg'
 import currency from '../../assets/weth.png'
 const PunkCard = ({ name, id, nftImageSrc, price, selectPunkHandler }) => {
   return (

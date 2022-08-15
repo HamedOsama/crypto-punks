@@ -8,7 +8,7 @@ const Owner = ({ ownerAccount, ownerProfilePhoto }) => {
         <img src={ownerProfilePhoto} alt="" className={style.profilePhoto} />
       </div>
       <div className={style.data}>
-        <h4 className={style.accountNumber}>{ownerAccount}</h4>
+        <p className={style.accountNumber}>{ownerAccount}</p>
         <p className={style.username}>@hamed</p>
       </div>
     </div>

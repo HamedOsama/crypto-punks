@@ -5,7 +5,6 @@ import Typist from 'react-typist';
 import style from './Main.module.css'
 import Owner from './Owner'
 import Typical from 'react-typical'
-import OwnerPhoto from '../../assets/owner/punkhead.png'
 import SocialMedia from './SocialMedia'
 const Main = ({ selectedPunk, punkListData }) => {
   const [activePunk, setActivePunk] = useState(punkListData[selectedPunk])

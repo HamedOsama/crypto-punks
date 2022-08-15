@@ -18,6 +18,7 @@
 
 .accountNumber {
   color: var(--sec-color);
+  font-weight: 600;
 }
 
 .username {
