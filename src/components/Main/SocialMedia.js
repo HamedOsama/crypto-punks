@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 
 import style from './SocialMedia.module.css'
 import instagram from '../../assets/owner/instagram.png'
 import github from '../../assets/owner/github-copy.png'
 import more from '../../assets/owner/more.png'
+import ThemeContext from '../../store/theme-context'
 function SocialMedia() {
-  const [currentTheme, setCurrentTheme] = useState(document.lastChild.dataset.theme);
+  // const [currentTheme, setCurrentTheme] = useState(document.lastChild.dataset.theme);
   // setCurrentTheme(document.lastChild.dataset.theme);
-  const iconClass = currentTheme === 'light' ? 'light' : '';
+  const themeCtx = useContext(ThemeContext)
+  const iconClass = themeCtx.currentTheme === 'light' ? 'light' : '';
   console.log('test')
   return (
     <ul className={style.socialMediaContainer}>
