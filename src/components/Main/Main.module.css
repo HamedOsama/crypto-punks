@@ -33,7 +33,7 @@
 .currentData .header h1 {
   font-size: 5rem;
   font-weight: 800;
-  transition: 1s;
+  /* transition: 1s; */
 }
 
 .ownerData {
