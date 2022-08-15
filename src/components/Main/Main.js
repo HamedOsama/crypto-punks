@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
+import Typing from 'react-typing-animation';
+import Typist from 'react-typist';
 
 import style from './Main.module.css'
 import Owner from './Owner'
+import Typical from 'react-typical'
 import OwnerPhoto from '../../assets/owner/punkhead.png'
 import SocialMedia from './SocialMedia'
 const Main = ({ selectedPunk, punkListData }) => {
   const [activePunk, setActivePunk] = useState(punkListData[selectedPunk])
   useEffect(() => {
     setActivePunk(punkListData[selectedPunk])
-
   }, [selectedPunk, punkListData]);
+  console.log(activePunk.id)
   return (
     <div className={style.main}>
       <div className={style.nftContainer}>
@@ -17,9 +20,11 @@ const Main = ({ selectedPunk, punkListData }) => {
       </div>
       <div className={style.currentData}>
         <div className={style.header}>
-          <h1>
-            {activePunk.name} <span className={style.id}>.#{activePunk.token_id}</span>
-          </h1>
+          <Typist key={activePunk.id}>
+            <h1>
+              {activePunk.name} <span className={style.id}>.#{activePunk.token_id}</span>
+            </h1>
+          </Typist>
         </div>
         <div className={style.ownerData}>
           <Owner ownerAccount={activePunk.owner.address} ownerProfilePhoto={activePunk.owner.profile_img_url} />
