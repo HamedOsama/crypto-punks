@@ -19,7 +19,9 @@ const HeaderActions = () => {
   return (
     <div className={style.HeaderActions} onClick={changeThemeHandler}>
       <div className={style.themeContainer}>
-        <img src={theme} alt="Theme" className={style.theme} />
+        <img src={theme} alt="Theme"
+          className={`${style.theme} ${currentTheme === 'light' ? 'light' : ''} 
+        `} />
       </div>
       <button className={style.primaryBtn}>Get In</button>
     </div>

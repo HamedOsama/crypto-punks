@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+.light {
+  filter: invert(1);
+}
+
 /* button {
   cursor: pointer;
   font: inherit;

@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import Header from './components/Header/Header';
 import axios from 'axios'
 import Punklist from './components/Punklist/Punklist';
 import Main from './components/Main/Main';
+import ThemeProvider from './store/ThemeProvider';
 function App() {
   const [punkListData, setPunkListData] = useState([])
   const [selectedPunk, setSelectedPunk] = useState(0)
@@ -20,14 +21,16 @@ function App() {
   }, [])
 
   return (
-    <div>
-      <Header />
-      {/* <div style={{ display: 'flex' }}> */}
-      {/* {punkListData.length > 0 && <PunkCard id={punkListData[1].token_id} name={punkListData[1].name} />} */}
-      {punkListData.length > 0 && <Main selectedPunk={selectedPunk} punkListData={punkListData} />}
+    <Fragment>
+      <ThemeProvider>
+        <Header />
+        {/* <div style={{ display: 'flex' }}> */}
+        {/* {punkListData.length > 0 && <PunkCard id={punkListData[1].token_id} name={punkListData[1].name} />} */}
+        {punkListData.length > 0 && <Main selectedPunk={selectedPunk} punkListData={punkListData} />}
+      </ThemeProvider>
       <Punklist punks={punkListData} setSelectedPunk={setSelectedPunk} />
       {/* </div> */}
-    </div>
+    </Fragment>
   );
 }
 
