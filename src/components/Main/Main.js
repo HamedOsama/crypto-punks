@@ -17,11 +17,11 @@ const Main = ({ selectedPunk, punkListData }) => {
       </div>
       <div className={style.currentData}>
         <div className={style.header}>
-          <Typist key={activePunk.id}>
+          <Typist key={activePunk.id} cursor={{ show: false }}>
             <h1>
               {activePunk.name} <span className={style.id}>.#{activePunk.token_id}</span>
             </h1>
-          </Typist>
+          </Typist >
         </div>
         <div className={style.ownerData}>
           <Owner ownerAccount={activePunk.owner.address} ownerProfilePhoto={activePunk.owner.profile_img_url} />
