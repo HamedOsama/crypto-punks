@@ -24,3 +24,15 @@
 .username {
   color: #00ebfe;
 }
+
+
+@media (max-width : 978px) {
+  .ownerContainer {
+    gap: 0.5rem;
+    margin: 0 0.5rem 0 0;
+  }
+
+  .accountNumber {
+    font-size: 12px;
+  }
+}

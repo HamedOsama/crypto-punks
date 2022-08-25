@@ -8,6 +8,7 @@
   overflow: hidden;
   cursor: pointer;
   min-width: 300px;
+  transition: 0.3s;
 }
 
 .card:last-of-type {
@@ -52,4 +53,13 @@
   align-items: center;
   gap: 0.25rem;
   margin: 0.75rem 0 0 0;
+}
+
+
+@media (max-width : 978px) {
+  .card {
+    height: 425px;
+    min-width: 250px;
+  }
+
 }

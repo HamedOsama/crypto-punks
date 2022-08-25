@@ -5,11 +5,13 @@
   gap: 2rem;
   align-items: center;
   color: var(--main-color);
+  transition: .3s;
 }
 
 .punkLogo {
   width: 200px;
   height: 70px;
+  transition: .3s;
 }
 
 .searchBar {
@@ -32,4 +34,18 @@
   width: 100%;
   color: var(--input-color);
   font-size: 1rem;
+}
+
+@media (max-width : 978px) {
+  .header {
+    gap: 1rem;
+  }
+
+  .punkLogo {
+    width: 100px;
+  }
+
+  .searchIconContainer {
+    margin: 1rem 0.5rem 1rem 1rem;
+  }
 }

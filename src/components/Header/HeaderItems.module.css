@@ -9,3 +9,10 @@
 .headerItems li {
   cursor: pointer;
 }
+
+
+@media (max-width : 978px) {
+  .headerItems {
+    gap: 0.5rem
+  }
+}
