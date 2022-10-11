@@ -14,7 +14,7 @@ const Punklist = props => {
           key={el.id}
           id={el.token_id}
           name={el.name}
-          nftImageSrc={el.image_original_url}
+          nftImageSrc={el.image_url}
           selectPunkHandler={changePunkHandler}
           price={el.traits[0].value} />
       })}
