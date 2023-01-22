@@ -13,7 +13,7 @@ const Main = ({ selectedPunk, punkListData }) => {
   return (
     <div className={style.main}>
       <div className={style.nftContainer}>
-        <img src={activePunk.image_original_url} alt="" className={style.nft} />
+        <img src={activePunk.image_url} alt="" className={style.nft} />
       </div>
       <div className={style.currentData}>
         <div className={style.header}>
