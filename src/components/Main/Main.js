@@ -24,7 +24,7 @@ const Main = ({ selectedPunk, punkListData }) => {
           </Typist >
         </div>
         <div className={style.ownerData}>
-          <Owner ownerAccount={activePunk.owner.address} ownerProfilePhoto={activePunk.owner.profile_img_url} />
+          <Owner ownerAccount={activePunk.creator.address} ownerProfilePhoto={activePunk.creator.profile_img_url} />
           <SocialMedia />
         </div>
       </div>
