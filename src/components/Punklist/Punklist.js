@@ -5,7 +5,6 @@ const Punklist = props => {
   const changePunkHandler = (e) => {
     const target = e.target.closest('.nftCard')
     props.setSelectedPunk(target.id)
-    // console.log(target.id);
   }
   return (
     <div className={style.punkList}>

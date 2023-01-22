@@ -8,14 +8,10 @@ function App() {
   const [punkListData, setPunkListData] = useState([])
   const [selectedPunk, setSelectedPunk] = useState(0)
   // const [currentTheme, setCurrentTheme] = useState('')
-  console.log(punkListData)
-  console.log(selectedPunk)
   useEffect(() => {
-    console.log(1)
     const getMyNfts = async () => {
       const openseaData = await axios.get('https://testnets-api.opensea.io/api/v1/assets?asset_contract_addresses=0xf9f33285b8BB61519954eb5c1cCDC0b45BA45bDF&order_direction=asc&offset=0');
       setPunkListData(openseaData.data.assets)
-      console.log(openseaData.data)
     }
     getMyNfts()
   }, [])

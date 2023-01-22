@@ -9,7 +9,6 @@ const Main = ({ selectedPunk, punkListData }) => {
   useEffect(() => {
     setActivePunk(punkListData[selectedPunk])
   }, [selectedPunk, punkListData]);
-  console.log(activePunk.id)
   return (
     <div className={style.main}>
       <div className={style.nftContainer}>

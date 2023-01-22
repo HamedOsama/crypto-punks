@@ -10,7 +10,6 @@ function SocialMedia() {
   // setCurrentTheme(document.lastChild.dataset.theme);
   const themeCtx = useContext(ThemeContext)
   const iconClass = themeCtx.currentTheme === 'light' ? 'light' : '';
-  console.log('test')
   return (
     <ul className={style.socialMediaContainer}>
       <li className={style.socialMedia}>
